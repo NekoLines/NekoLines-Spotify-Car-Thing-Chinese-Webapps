@@ -185,7 +185,7 @@ const getMoreItem = (category: Category): ShelfItem[] => {
         identifier: `more-items-${category.title}`,
         category: category.parsedId,
         type: ItemType.MORE,
-        title: ItemType.MORE,
+        title: '更多',
         subtitle: '',
         image_id: '',
         playable: false,
