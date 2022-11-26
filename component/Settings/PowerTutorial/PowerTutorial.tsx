@@ -15,11 +15,10 @@ const PowerTutorial = () => {
   return (
     <div className={styles.powerTutorial}>
       <Type className={styles.title} name="brioBold">
-        Power off/on
+        打开/关闭电源
       </Type>
       <Type className={styles.description} name="celloBook">
-        To power off/on, press and hold the Settings button on top of your
-        device.
+        若要进行打开/关闭电源操作，请按住设备顶部的“设置”按钮。
       </Type>
     </div>
   );

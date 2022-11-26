@@ -33,8 +33,7 @@ const FactoryReset = () => {
   return (
     <div className={styles.factoryReset}>
       <div className={styles.description}>
-        Are you really sure you want to do a factory reset? All data on this
-        device will be erased. This cannot be undone.
+        您确定要恢复为出厂设置吗？所有该<br/>设备上的数据和配置信息将被消除。<br/>这是<b> 不可逆 </b>的。
       </div>
       <ButtonGroup layout="horizontal" style={{ margin: '0 auto' }}>
         <Button
@@ -45,7 +44,7 @@ const FactoryReset = () => {
           }
           onClick={factoryReset}
         >
-          Delete all
+          全部删除
         </Button>
         <Button
           type={
@@ -55,7 +54,7 @@ const FactoryReset = () => {
           }
           onClick={settingsStore.handleFactoryResetClicked}
         >
-          Cancel
+          取消
         </Button>
       </ButtonGroup>
     </div>

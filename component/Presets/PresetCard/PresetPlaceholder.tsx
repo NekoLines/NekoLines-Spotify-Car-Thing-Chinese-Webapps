@@ -13,7 +13,7 @@ const PresetPlaceholder = ({ isFocused }: Props) => {
         name="mestroBold"
         className={classNames(styles.title, { [styles.active]: isFocused })}
       >
-        Press and hold the preset button to save what’s playing
+        按住预设按钮来保存正在播放的内容
       </Type>
     </div>
   );

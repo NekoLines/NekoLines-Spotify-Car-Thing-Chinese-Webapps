@@ -28,7 +28,7 @@ const Widget = () => {
           <Type
             name="balladBold"
             className={classNames(styles.source, styles.truncate)}
-          >{`Playing on ${uiState.otherActiveApp?.name}`}</Type>
+          >{`由 ${uiState.otherActiveApp?.name} 播放`}</Type>
           <Type
             name="brioBold"
             className={classNames(styles.title, styles.truncate)}

@@ -431,14 +431,14 @@ class PhoneConnectionStore {
     const isConnecting = isCurrentDevice && !isConnected;
 
     if (isConnected) {
-      return 'Connected';
+      return '已连接';
     }
 
     if (isConnecting) {
-      return 'Connecting...';
+      return '连接中...';
     }
 
-    return 'Not Connected';
+    return '已断开';
   }
 }
 

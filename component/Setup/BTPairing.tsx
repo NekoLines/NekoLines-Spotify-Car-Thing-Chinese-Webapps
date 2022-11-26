@@ -15,10 +15,10 @@ const BTPairing = () => {
       className={styles.screen}
       data-testid={`${SetupView.BT_PAIRING}-screen`}
     >
-      <div className={styles.title}>Pairing code</div>
+      <div className={styles.title}>配对代码</div>
       <div className={styles.content}>
         <div className={styles.texts}>
-          In the Spotify app, confirm that you see the code below.
+          在 Spotify 应用内确认您已看见配对代码。
         </div>
         <div className={styles.pinCode} data-testid="bt-pin">
           {parsePincode(bluetoothStore.bluetoothPairingPin)}

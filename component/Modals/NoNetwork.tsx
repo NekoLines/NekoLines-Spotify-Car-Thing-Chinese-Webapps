@@ -17,14 +17,13 @@ export const NoNetwork = ({ onAcknowledgeClick }: Props): JSX.Element => (
     <div className={styles.noNetwork}>
       <div className={styles.noNetworkContent}>
         <IconPublic iconSize={64} />
-        <Type name="brioBold">No network</Type>
+        <Type name="brioBold">网络未连接</Type>
         <Type name="celloBook">
-          Make sure cellular data is turned on in your phone’s Settings. We’ll
-          let you know when you’re back online.
+          确保您的手机的“设置”中已打开网络功能。我们会在您恢复联机时通知您。
         </Type>
       </div>
       <Button onClick={onAcknowledgeClick} type={ButtonType.BUTTON_SECONDARY}>
-        Got it
+        了解了
       </Button>
     </div>
   </div>

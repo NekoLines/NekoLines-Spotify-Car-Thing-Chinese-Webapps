@@ -66,7 +66,7 @@ const SkipButton = () => {
         onPointerUp={() => setPressedSkip(false)}
         onPointerCancel={() => setPressedSkip(false)}
       >
-        <Type name="celloBook">{voiceStore.error ? 'Next' : 'Skip'}</Type>
+        <Type name="celloBook">{voiceStore.error ? '继续' : '跳过'}</Type>
       </div>
     </CSSTransition>
   );

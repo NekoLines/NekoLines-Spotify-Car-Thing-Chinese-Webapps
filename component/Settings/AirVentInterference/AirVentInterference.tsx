@@ -73,7 +73,7 @@ const AirVentInterference = () => {
     <>
       <div className={styles.aviHeader}>
         <span data-testid={`${OptionsMenuItemId.AIR_VENT_INTERFERENCE}-header`}>
-          <Type name="altoBold">Air vent interference</Type>
+          <Type name="altoBold">气流干扰检测</Type>
         </span>
       </div>
       <div ref={aviContainerRef} className={styles.aviContainer}>
@@ -91,28 +91,26 @@ const AirVentInterference = () => {
           onClick={() => uiState.toggleNotification()}
           data-testid="avi-notification"
         >
-          <p>Allow air vent alerts</p>
+          <p>允许气流干扰警报</p>
           <span
             data-testid="avi-notification-status"
             className={classNames({
               [styles.onOff]: !uiState.airVentAlertsDisabled,
             })}
           >
-            {uiState.airVentAlertsDisabled ? 'Off' : 'On'}
+            {uiState.airVentAlertsDisabled ? '关' : '开'}
           </span>
         </div>
         <div className={styles.texts}>
           <p className={styles.intro}>
-            Too much air flowing into your microphones will <br /> likely
-            interfere with voice requests. When we detect an issue,{' '}
-            <IconWind32 /> will appear at the top right corner of the screen. If
-            this happens, here are some things to try:
+            过多的气流流经您的麦克风可能会干扰您的语音命令<br/>执行, 当我们检测到问题时，{' '}
+            <IconWind32 /> 图标会出现在您屏幕<br/>的右上角上，如果发生这种情况请尝试：
           </p>
           <ul>
-            <li>Move Car Thing above the level of air flow</li>
-            <li>Direct the air flow below Car Thing</li>
-            <li>Close the air vent</li>
-            <li>Use a different mount</li>
+            <li>将 Car Thing 移动到气流的上方</li>
+            <li>引导气流从 Car Thing 下方流过</li>
+            <li>关闭附近的空调出风口</li>
+            <li>使用不同的底座移动 Car Thing 位置</li>
           </ul>
         </div>
       </div>

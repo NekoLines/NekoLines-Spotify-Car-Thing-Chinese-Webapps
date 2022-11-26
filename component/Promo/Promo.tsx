@@ -18,17 +18,17 @@ type PromoContent = {
 
 const PROMOS: Record<PromoType, PromoContent> = {
   other_media: {
-    title: 'Not just Spotify',
-    text: 'You can use Car Thing to control playback for other media services too.',
-    buttonText: 'Got it',
+    title: '不仅是 Spotify',
+    text: '您也可以使用 Car Thing 来控制其他媒体服务的播放。',
+    buttonText: '了解',
     image: "/media/other-media.83237a6ee7e62a4fb53b.png",
   },
   phone_calls: {
-    title: 'Phone Calls',
-    buttonText: 'Got it',
+    title: '手机通话',
+    buttonText: '了解',
     image: "/images/phone-call.png", // can't find the actual file???
-    text: 'Your phone calls will appear on the Car Thing screen. Learn more or turn off this feature in Settings.',
-    optionText: 'Settings',
+    text: '您的通话也可以在 Car Thing 上进行显示，在设置中了解更多信息或关闭该功能。',
+    optionText: '设置',
   },
 };
 

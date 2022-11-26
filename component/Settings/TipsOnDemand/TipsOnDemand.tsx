@@ -23,16 +23,15 @@ const TipsOnDemandError = ({ uiState }: { uiState: TipsOnDemandUiState }) => {
 
   return (
     <div className={styles.error}>
-      <Type name="brioBold">Can’t get tips right now</Type>
+      <Type name="brioBold">当前无法获取诀窍</Type>
       <Type name="celloBook">
-        You might have lost the connection to your phone or network. Try again
-        in a little while.
+        您可能已经失去了同手机的链接或当前网络不佳，请稍后重试。
       </Type>
       <Button
         onClick={uiState.handleConfirmError}
         type={ButtonType.BUTTON_PRIMARY}
       >
-        OK
+        确定
       </Button>
     </div>
   );
@@ -99,7 +98,7 @@ const TipsOnDemand = () => {
               {...pointerListenersMaker(setPressed)}
             >
               <Type textColor="white" name="celloBook">
-                Next
+                继续
               </Type>
             </div>
           </div>

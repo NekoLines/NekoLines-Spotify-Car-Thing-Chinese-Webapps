@@ -23,7 +23,7 @@ const DisplayAndBrightness = () => {
         <span
           data-testid={`${OptionsMenuItemId.DISPLAY_AND_BRIGHTNESS}-header`}
         >
-          <Type name="altoBold">Display and brightness</Type>
+          <Type name="altoBold">显示与亮度</Type>
         </span>
       </div>
       <div className={styles.container}>
@@ -34,18 +34,17 @@ const DisplayAndBrightness = () => {
           {...pointerListenersMaker(setPressed)}
           onClick={() => uiState.handleClickToggle()}
         >
-          <Type name="canonBold">Night mode</Type>
+          <Type name="canonBold">夜行模式</Type>
           <Type
             name="canonBold"
             textColor={uiState.isNightMode && greenLight}
             dataTestId="night-mode-toggle"
           >
-            {uiState.isNightMode ? 'On' : 'Off'}
+            {uiState.isNightMode ? '开' : '关'}
           </Type>
         </div>
         <Type name="celloBook" className={styles.text}>
-          With night mode on, your screen should be easier to view in low-light
-          conditions.
+          当夜行模式启动后，屏幕将对低光条件下的显示效果进行优化，您会获得更好的夜间使用效果。
         </Type>
       </div>
     </>

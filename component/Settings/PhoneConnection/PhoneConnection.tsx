@@ -130,7 +130,7 @@ const PhoneConnection = () => {
           {...pointerListenersMaker(setPressedAddMoreItem)}
           onClick={phoneConnectionStore.handleAddNewPhoneClick}
         >
-          <div className={styles.title}>Add a new phone</div>
+          <div className={styles.title}>添加一台新手机</div>
         </SwiperSlide>
       </SwiperComponent>
       <Overlay

@@ -29,15 +29,14 @@ const NoConnection = () => {
 
   return (
     <div data-testid="no_connection-modal-type" className={styles.dialog}>
-      <div className={styles.title}>Phone Disconnected</div>
+      <div className={styles.title}>手机已断开</div>
       <div className={styles.description}>
         <p>
-          Car Thing will automatically try to reconnect. You can also tap below
-          and choose a phone to reconnect to.
+          Car Thing 将自动重新连接。您也可以点击按钮并在跳转的页面中选择您想要重新连接的手机。
         </p>
       </div>
       <Button type={ButtonType.BUTTON_PRIMARY} onClick={handleClick}>
-        Go to phone list
+        前往手机列表
       </Button>
     </div>
   );

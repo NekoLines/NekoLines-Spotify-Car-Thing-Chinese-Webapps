@@ -13,11 +13,10 @@ const PremiumAccountRequired = () => {
   return (
     <div data-testid="premiumneeded-modal-type" className={styles.dialog}>
       <SpotifyLogo logoHeight={64} logoColorClass="white" />
-      <div className={styles.title}>Need a Premium account</div>
+      <div className={styles.title}>需要高级账户</div>
       <div className={styles.description}>
         <p>
-          To use Car Thing you need to be logged in to a Spotify Premium or
-          Premium Family account on your phone.
+          要使用 Car Thing，您需要在手机上登录 Spotify Premium 或 Premium Family 帐户。
         </p>
       </div>
     </div>

@@ -12,19 +12,19 @@ type Props = {
 
 export const TITLES = {
   // backticks intended
-  playlists: 'You don’t have any playlists',
-  podcasts: 'You haven’t followed any podcasts',
-  artists: 'You haven’t followed any artists',
-  albums: 'You haven’t saved any albums',
-  voice: 'Voice results will appear here',
+  playlists: '您没有关注任何歌单',
+  podcasts: '您没有关注任何播客和节目',
+  artists: '您没有关注任何艺人',
+  albums: '您没有保存任何专辑',
+  voice: '此处将显示语音结果',
 };
 
 const VOICE_TIPS = {
-  playlists: '“Hey Spotify, like this playlist” or tap the heart icon.',
-  podcasts: '“Hey Spotify, follow this podcast” or tap the heart icon.',
-  artists: '“Hey Spotify, follow this artist” or tap the heart icon.',
-  albums: '“Hey Spotify, like this album” or tap the heart icon.',
-  voice: 'or tap the mic button to make a request',
+  playlists: '“Hey Spotify, like this playlist” 或点击喜爱以添加到列表。',
+  podcasts: '“Hey Spotify, follow this podcast” 或点击喜爱以添加到列表。',
+  artists: '“Hey Spotify, follow this artist” 或点击喜爱以添加到列表。',
+  albums: '“Hey Spotify, like this album” 或点击喜爱以添加到列表。',
+  voice: '或点击麦克风按钮提出您的要求',
 };
 
 const InlineTipItem = ({ item, isActive }: Props) => {
@@ -40,7 +40,7 @@ const InlineTipItem = ({ item, isActive }: Props) => {
   const isVoiceTip = uiState.isVoiceTextPlaceholder(item);
 
   const title = TITLES[categoryTitle];
-  const trySaying = isVoiceTip ? 'Say “Hey Spotify” ' : 'Try saying: ';
+  const trySaying = isVoiceTip ? '说 “Hey Spotify” ' : '尝试说: ';
   const subtitle = VOICE_TIPS[categoryTitle];
 
   return (

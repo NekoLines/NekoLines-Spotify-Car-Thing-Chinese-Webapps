@@ -5,10 +5,10 @@ const LoginRequired = () => {
   return (
     <div data-testid="login-modal-type" className={styles.dialog}>
       <SpotifyLogo logoHeight={64} logoColorClass="white" />
-      <div className={styles.title}>Not logged in</div>
+      <div className={styles.title}>未登录</div>
       <div className={styles.description}>
         <p>
-          To use Car Thing you need to log in to the Spotify app on your phone.
+          要使用 Car Thing ，您需要在您的手机上登陆 Spotify 应用程序。
         </p>
       </div>
     </div>

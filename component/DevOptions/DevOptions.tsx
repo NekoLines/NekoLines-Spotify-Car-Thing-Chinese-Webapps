@@ -28,17 +28,17 @@ const DevOptions = () => {
 
   return (
     <div data-testid="dev-options" className={styles.devOptions}>
-      <div className={styles.title}>Developer Options</div>
+      <div className={styles.title}>开发人员选项</div>
       <div className={styles.options}>
         <FormToggle
           onChange={(event) => handleChange(event, FETCH_IMAGES)}
           checked={devOptionsStore.imageFetchEnabled}
           className={styles.devOptionsToggle}
         >
-          Load Images
+          读取 Images
         </FormToggle>
         <label htmlFor="alert-threshold" className={styles.devOptionsCounting}>
-          <p>Wind alert threshold: </p>
+          <p>气流干扰阈值: </p>
           <span>{devOptionsStore.windAlertThreshold}</span>
           <section>
             <ButtonSecondary
@@ -60,7 +60,7 @@ const DevOptions = () => {
           </section>
         </label>
         <label htmlFor="cache-size" className={styles.devOptionsCounting}>
-          <p>Image cache size: </p>
+          <p>Image 缓存尺寸: </p>
           <span>{devOptionsStore.imageCacheSize}</span>
           <section id="cache-size">
             <ButtonSecondary
@@ -83,27 +83,27 @@ const DevOptions = () => {
           className={styles.requestTipBtn}
           onClick={devOptionsStore.getNewTip}
         >
-          Request new tip
+          请求新诀窍
         </ButtonPrimary>
         <ButtonPrimary
           className={styles.requestTipBtn}
           onClick={devOptionsStore.clearLocalStorage}
         >
-          Clear localStorage
+          清理本地存储
         </ButtonPrimary>
       </div>
       <table className={styles.statsTable}>
         <tbody>
           <tr>
-            <td>Images currently in cache:</td>
+            <td>当前缓存中的 Images:</td>
             <td>{devOptionsStore.imagesInCache()}</td>
           </tr>
           <tr>
-            <td>Images loaded total:</td>
+            <td>Images 总数:</td>
             <td>{devOptionsStore.imagesLoaded}</td>
           </tr>
           <tr>
-            <td>Dismissed at:</td>
+            <td>驳回在:</td>
             <td>{devOptionsStore.alertDismissedAt}</td>
           </tr>
         </tbody>

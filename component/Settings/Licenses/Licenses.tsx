@@ -10,6 +10,7 @@ import { Type } from 'component/CarthingUIComponents';
 const UI_LICENSE_FILEPATH = 'license/ui-license.txt';
 const MW_LICENSE_FILEPATH = 'license/mw-license.txt';
 const OS_LICENSE_FILEPATH = 'license/os-license.txt';
+const I18N_LICENSE_FILEPATH = 'license/i18n-license.txt';
 
 const LINE_HEIGHT = parseInt(styles['line-height'], 10);
 
@@ -35,15 +36,17 @@ const Licenses = () => {
 
     async function fetchLicenses() {
       const filePromises = await Promise.all([
+        fetch(I18N_LICENSE_FILEPATH),
         fetch(UI_LICENSE_FILEPATH),
         fetch(MW_LICENSE_FILEPATH),
         fetch(OS_LICENSE_FILEPATH),
       ]);
-      const [uiLicense, mwLicense, osLicense] = await Promise.all(
+      const [i18nLicense, uiLicense, mwLicense, osLicense] = await Promise.all(
         filePromises.map((filePromise) => filePromise.text()),
       );
       if (mountedRef.current) {
         setAllLicenseLines([
+          ...parseFileContents(i18nLicense),
           ...parseFileContents(uiLicense),
           ...parseFileContents(mwLicense),
           ...parseFileContents(osLicense),
@@ -71,7 +74,7 @@ const Licenses = () => {
   return (
     <div className={styles.licenses}>
       <Type name="altoBold" className={styles.header}>
-        Third-party licenses
+        第三方软件协议
       </Type>
       {allLicenseLines.length ? (
         <VariableSizeList

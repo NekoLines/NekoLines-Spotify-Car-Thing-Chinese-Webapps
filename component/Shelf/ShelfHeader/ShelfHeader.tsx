@@ -64,6 +64,18 @@ const ShelfHeader = () => {
     });
   };
 
+  const getChineseTitle = (id,title) => {
+    switch(id){
+      case VOICE_IDENTIFIER:return '搜索'; 
+      case HOME_IDENTIFIER:return '主页'; 
+      case 'playlists':return '歌单';
+      case 'podcasts':return '播客和节目';
+      case 'artists':return '艺人';
+      case 'albums':return '专辑';
+      default:return title;
+    }
+  }
+
   const getTitleTranslateLeft = (index: number) => {
     return (
       titleRefs
@@ -105,7 +117,7 @@ const ShelfHeader = () => {
           <ShelfHeaderItem
             key={category.parsedId}
             id={category.parsedId}
-            title={category.title}
+            title={getChineseTitle(category.parsedId,category.title)}
             icon={CATEGORY_ICONS[category.parsedId].components}
             iconMargin={CATEGORY_ICONS[category.parsedId].iconMargin}
             marginRight={40}
@@ -118,7 +130,7 @@ const ShelfHeader = () => {
         ))}
         <ShelfHeaderItem
           id={YOUR_LIBRARY}
-          title="Your Library"
+          title="音乐库"
           icon={CATEGORY_ICONS[YOUR_LIBRARY].components}
           iconMargin={CATEGORY_ICONS[YOUR_LIBRARY].iconMargin}
           marginRight={40}
@@ -132,7 +144,7 @@ const ShelfHeader = () => {
           <ShelfHeaderItem
             key={category.parsedId}
             id={category.parsedId}
-            title={category.title}
+            title={getChineseTitle(category.parsedId,category.title)}
             marginRight={24}
             visible={uiState.isInYourLibrary}
             active={uiState.isSelectedItemCategory(category.parsedId)}

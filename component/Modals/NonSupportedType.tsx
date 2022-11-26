@@ -11,7 +11,7 @@ const NonSupportedType = () => {
       >
         <IconExclamationAlt className={styles.icon} iconSize={64} />
         <div className={styles.text}>
-          <span>Song view is not available for radio stations</span>
+          <span>歌曲界面不适用于专辑电台</span>
         </div>
       </div>
     </LegacyModal>

@@ -50,7 +50,7 @@ const PodcastSpeedOptions = () => {
               [styles.smallTitle]: uiState.smallHeader,
             })}
           >
-            Change podcast speed
+            更改播客速度
           </Type>
         </div>
         <Swiper

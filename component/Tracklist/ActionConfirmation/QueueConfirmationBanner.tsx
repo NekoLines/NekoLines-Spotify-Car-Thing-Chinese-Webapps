@@ -10,7 +10,7 @@ const QueueConfirmationBanner = () => {
     <Banner
       show={uiState.shouldShowQueueConfirmation}
       icon={<IconCheck32 />}
-      infoText="Added to Queue."
+      infoText="已添加到队列。"
       colorStyle="confirmation"
     />
   );

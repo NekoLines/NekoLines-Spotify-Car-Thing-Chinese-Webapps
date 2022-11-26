@@ -49,7 +49,7 @@ const NoInteractionModal = () => {
           }
           onClick={continueOnboarding}
         >
-          Continue Tour
+          继续旅途
         </Button>
         <Button
           type={
@@ -59,7 +59,7 @@ const NoInteractionModal = () => {
           }
           onClick={endDuringTactile}
         >
-          End Tour
+          结束旅途
         </Button>
       </ButtonGroup>
     </div>

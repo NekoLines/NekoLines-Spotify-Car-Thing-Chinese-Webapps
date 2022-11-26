@@ -49,7 +49,7 @@ const PhoneCall = () => {
             </Type>
           )}
           {uiState.shouldShowCallingText ? (
-            <Type name="celloBook">Calling...</Type>
+            <Type name="celloBook">通话中...</Type>
           ) : (
             <PhoneCallTimer />
           )}

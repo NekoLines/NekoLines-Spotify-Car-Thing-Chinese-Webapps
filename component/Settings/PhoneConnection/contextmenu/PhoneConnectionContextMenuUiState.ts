@@ -62,7 +62,7 @@ class PhoneConnectionContextMenuUiState {
   }
 
   get menuItems() {
-    return this.isConnected ? ['Forget'] : ['Connect', 'Forget'];
+    return this.isConnected ? ['遗忘'] : ['连接到该手机', '遗忘'];
   }
 
   get phoneMenuItem(): string {
@@ -95,14 +95,14 @@ class PhoneConnectionContextMenuUiState {
   }
 
   handleActionMenuItemClick(item: string) {
-    if (item === 'Forget') {
+    if (item === '遗忘') {
       this.settingsUbiLogger.logActionMenuForgetRowClick();
     }
     this.handleMenuItemSelected(item);
   }
 
   handleActionMenuItemDialPress = (item: string) => {
-    if (item === 'Forget') {
+    if (item === '遗忘') {
       this.settingsUbiLogger.logActionMenuForgetRowDialPress();
     }
     this.handleMenuItemSelected(item);
@@ -110,14 +110,14 @@ class PhoneConnectionContextMenuUiState {
 
   handleMenuItemSelected(item: string) {
     switch (item) {
-      case 'Connect':
+      case '连接到该手机':
         if (this.phoneConnectionStore.phoneToConnectOrForget) {
           this.phoneConnectionStore.handleSelectPhoneClick(
             this.phoneConnectionStore.phoneToConnectOrForget,
           );
         }
         break;
-      case 'Forget':
+      case '遗忘':
         this.phoneConnectionStore.setPhoneConnectionModal(
           PhoneConnectionModalView.FORGET_PHONE_CONFIRM,
         );

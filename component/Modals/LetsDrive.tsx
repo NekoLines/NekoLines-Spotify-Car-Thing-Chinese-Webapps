@@ -21,17 +21,17 @@ const LetsDrive = () => {
           className={classNames(styles.modalIcon, styles.iconNowPlaying)}
         />
         <div className={styles.modalTitle} data-testid="modal-title">
-          Let's drive
+          开始驾驶吧
         </div>
         <div className={styles.modalText} data-testid="modal-text">
-          <span className={styles.boldText}>Press a preset button </span>
-          or try
+          <span className={styles.boldText}>尝试点击按钮 </span>
+          或尝试说
           <br />
           <span className={styles.boldText}>
             {' '}
             &quot;Hey Spotify, play some music&quot;{' '}
           </span>
-          to get things going.
+          来让事情顺利进行。
         </div>
       </div>
     </LegacyModal>

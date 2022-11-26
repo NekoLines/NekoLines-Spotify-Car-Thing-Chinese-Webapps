@@ -114,7 +114,7 @@ class TracklistUiState {
 
       this.rootStore.errorHandler.logUnexpectedError(
         new Error(
-          'Should scroll to the latest played podcast episode, but it was not in the list of episodes',
+          '应滚动到最新播放的播客单集，但它不在列表中',
         ),
       );
     }

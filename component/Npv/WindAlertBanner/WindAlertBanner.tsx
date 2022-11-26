@@ -18,19 +18,19 @@ const WindAlertBanner = () => {
     });
   }, [uiState]);
 
-  const infoText = 'Your air vent noise level is high.';
+  const infoText = '您的气流干扰程度已超过阈值。';
 
   const icon = <IconWind32 />;
 
   return (
     <Banner show={uiState.shouldShowAlert} icon={icon} infoText={infoText}>
       <BannerButton
-        text="How to fix"
+        text="修复指南"
         withDivider
         onClick={() => uiState.handleClickHowToFix()}
       />
       <BannerButton
-        text="Hide"
+        text="隐藏"
         withDivider
         onClick={() => uiState.handleClickHide()}
       />

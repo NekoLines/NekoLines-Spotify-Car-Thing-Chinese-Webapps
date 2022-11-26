@@ -24,8 +24,8 @@ const PhoneConnectionContextMenuItem = ({
 
   const getIcon = (label: string) => {
     return {
-      ['Connect']: <IconBluetooth />,
-      ['Forget']: <IconX />,
+      ['连接到该手机']: <IconBluetooth />,
+      ['遗忘']: <IconX />,
     }[label];
   };
 

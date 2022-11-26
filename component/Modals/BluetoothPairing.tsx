@@ -13,9 +13,9 @@ const BluetoothPairing = () => {
   return (
     <div className={styles.dialog} data-testid="bluetoothpairing-modal-type">
       <SpotifyLogo logoHeight={64} logoColorClass="white" />
-      <div className={styles.title}>Pairing...</div>
+      <div className={styles.title}>配对中...</div>
       <div className={styles.description}>
-        Confirm that you see the code below on your phone.
+        确认您在手机上看到以下代码。
       </div>
       <div className={styles.pairingCode}>{bluetoothStore.pin}</div>
     </div>

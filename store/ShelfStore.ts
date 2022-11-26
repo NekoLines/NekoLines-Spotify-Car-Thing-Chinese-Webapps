@@ -130,7 +130,7 @@ export const getCategoryItems = (
       return [
         {
           ...firstItem,
-          title: 'No voice results',
+          title: '无语音结果',
           image_id:
             'https://misc.spotifycdn.com/superbird/images/voice_icon.png',
         },
@@ -254,7 +254,7 @@ class ShelfStore {
       this.loading = false;
       this.rootStore.errorHandler.logUnexpectedError(
         e,
-        'Failed to load shelf data',
+        '未能加载机框数据',
       );
     }
   }

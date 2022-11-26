@@ -12,10 +12,10 @@ class Connected extends Component<{}, {}> {
         data-testid={`${SetupView.CONNECTED}-screen`}
       >
         <div className={styles.title} style={{ color: pink }}>
-          Connected
+          已连接
         </div>
         <div className={styles.subtitle} style={{ color: pink }}>
-          Continue with setup in the Spotify app.
+          配置过程将在 Spotify 应用程序内继续进行。
         </div>
       </div>
     );

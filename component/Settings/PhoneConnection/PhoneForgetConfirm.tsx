@@ -27,19 +27,19 @@ const PhoneForgetConfirm = () => {
   return (
     <div>
       <div className={styles.title} data-testid="confirm-forget-title">
-        Forget phone?
+        遗忘这台手机？
       </div>
       <div className={styles.description}>
         {isConnected ? (
           <p>
-            You’re connected to{' '}
-            {phoneConnectionStore.phoneToConnectOrForget?.name}. Are you sure
-            you want to forget it?
+            您当前已连接到{' '}
+            {phoneConnectionStore.phoneToConnectOrForget?.name}。
+            确定要遗忘这台设备吗？
           </p>
         ) : (
           <p>
-            Are you sure you want to forget{' '}
-            {phoneConnectionStore.phoneToConnectOrForget?.name}?
+            您确定要遗忘{' '}
+            {phoneConnectionStore.phoneToConnectOrForget?.name}吗?
           </p>
         )}
       </div>
@@ -53,7 +53,7 @@ const PhoneForgetConfirm = () => {
           }
           onClick={phoneConnectionStore.handlePhoneForgetConfirmClick}
         >
-          Forget
+          确定
         </Button>
         <Button
           type={
@@ -66,7 +66,7 @@ const PhoneForgetConfirm = () => {
             phoneConnectionStore.dismissModal();
           }}
         >
-          Cancel
+          取消
         </Button>
       </ButtonGroup>
     </div>

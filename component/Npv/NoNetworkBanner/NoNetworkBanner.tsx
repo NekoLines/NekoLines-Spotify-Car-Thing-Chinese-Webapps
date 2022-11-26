@@ -14,7 +14,7 @@ function NoNetworkBanner(): JSX.Element {
   return (
     <Banner
       show
-      infoText="No network. Be sure your phone has cellular data turned on."
+      infoText="没有网络。请确保您的手机已打开网络链接。"
       icon={<IconPublic iconSize={BANNER_ICON_SIZE} />}
     />
   );
@@ -24,7 +24,7 @@ export function NetworkRestoredBanner(): JSX.Element {
   return (
     <Banner
       show
-      infoText="You’re back online. Enjoy."
+      infoText="您已恢复网络连接，继续享受吧。"
       icon={<IconCheck iconSize={BANNER_ICON_SIZE} />}
       colorStyle="confirmation"
     />

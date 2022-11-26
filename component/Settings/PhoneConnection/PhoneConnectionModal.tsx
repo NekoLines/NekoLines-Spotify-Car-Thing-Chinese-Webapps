@@ -24,12 +24,12 @@ const PhoneConnectionModal = () => {
       case PhoneConnectionModalView.ADD_NEW_PHONE:
         return (
           <>
-            <div className={styles.title}>Pairing mode</div>
+            <div className={styles.title}>配对模式</div>
             <div className={styles.description}>
-              {`Go to Bluetooth in your phone’s settings and connect to ${
+              {`在手机设置中打开蓝牙，然后连接到 ${
                 bluetoothStore.localDevice
                   ? bluetoothStore.localDevice.name
-                  : 'your Car Thing'
+                  : '您的 Car Thing'
               }.`}
             </div>
           </>
@@ -37,9 +37,9 @@ const PhoneConnectionModal = () => {
       case PhoneConnectionModalView.ADD_NEW_PAIRING:
         return (
           <>
-            <div className={styles.title}>Pairing...</div>
+            <div className={styles.title}>配对中...</div>
             <div className={styles.description}>
-              Confirm that you see the code below on your phone.
+              确认您在手机上看到以下代码。
             </div>
             <div className={styles.pairingCode}>{bluetoothStore.pin}</div>
           </>
@@ -54,7 +54,7 @@ const PhoneConnectionModal = () => {
               className={styles.subtitle}
               data-testid="forget-phone-progress"
             >
-              <p>Forgetting</p>
+              <p>遗忘中</p>
               <p>{phoneConnectionStore.phoneToConnectOrForget?.name}...</p>
             </div>
           </>
@@ -62,9 +62,9 @@ const PhoneConnectionModal = () => {
       case PhoneConnectionModalView.FORGET_PHONE_FAILURE:
         return (
           <>
-            <div className={styles.title}>Couldn’t forget phone</div>
+            <div className={styles.title}>失败</div>
             <div className={styles.description}>
-              <p>Car Thing is having trouble forgetting your phone.</p>
+              <p>Car Thing 在遗忘您的手机过程中出现了一些问题。</p>
             </div>
           </>
         );
@@ -74,7 +74,7 @@ const PhoneConnectionModal = () => {
             <IconCheck iconSize={24} className={styles.iconCheck} />
             <div className={styles.subtitle} data-testid="forget-phone-success">
               <p>{phoneConnectionStore.phoneToConnectOrForget?.name}</p>
-              <p> is forgotten</p>
+              <p> 已经被遗忘</p>
             </div>
           </>
         );
@@ -86,7 +86,7 @@ const PhoneConnectionModal = () => {
               className={styles.subtitle}
               data-testid="select-phone-progress"
             >
-              <p>Connecting to</p>
+              <p>正在连接到</p>
               <p>{phoneConnectionStore.phoneToConnectOrForget?.name}...</p>
             </div>
           </>
@@ -96,7 +96,7 @@ const PhoneConnectionModal = () => {
           <>
             <IconCheck iconSize={24} className={styles.iconCheck} />
             <div className={styles.subtitle} data-testid="select-phone-success">
-              <p>Connected to</p>
+              <p>已连接到</p>
               <p>{bluetoothStore.currentDevice?.name}</p>
             </div>
           </>
@@ -104,11 +104,10 @@ const PhoneConnectionModal = () => {
       case PhoneConnectionModalView.SELECT_PHONE_FAILURE:
         return (
           <>
-            <div className={styles.title}>Couldn’t connect to phone</div>
+            <div className={styles.title}>不能连接到您的手机</div>
             <div className={styles.description}>
               <p>
-                Car Thing is having trouble connecting to your phone. Make sure
-                your phone is turned on, Bluetooth is on and in range.
+                Car Thing无法连接到您的手机。请确保您的手机已打开&蓝牙已打开且在范围内。
               </p>
             </div>
           </>

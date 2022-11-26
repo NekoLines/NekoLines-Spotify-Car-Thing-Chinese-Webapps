@@ -44,7 +44,7 @@ const MainMenu = () => {
   return (
     <div className={styles.mainMenu}>
       <div className={styles.header}>
-        <p>Settings</p>
+        <p>设置</p>
       </div>
       <SwiperComponent
         allowTouchMove

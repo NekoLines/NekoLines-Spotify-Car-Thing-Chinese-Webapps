@@ -7,9 +7,9 @@ const Welcome = () => {
   const { setupStore } = useStore();
   return (
     <div className={styles.screen} data-testid={`${SetupView.WELCOME}-screen`}>
-      <div className={styles.title}>Welcome to Car Thing.</div>
+      <div className={styles.title}>嗨！欢迎使用 Car Thing。</div>
       <div className={styles.subtitleAndButton}>
-        <div className={styles.subtitle}>Get started.</div>
+        <div className={styles.subtitle}>马上开始</div>
         <div
           className={styles.buttonBackground}
           onPointerDown={setupStore.onContinueArrowClicked}

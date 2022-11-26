@@ -6,11 +6,10 @@ const Waiting = () => {
   return (
     <div className={styles.screen} data-testid={`${SetupView.WAITING}-screen`}>
       <div className={styles.title}>
-        <AppendEllipsis>Waiting</AppendEllipsis>
+        <AppendEllipsis>请稍等</AppendEllipsis>
       </div>
       <div className={styles.subtitle}>
-        Setup will continue once your phone has downloaded the latest version
-        and reconnects to Car Thing.
+        在您的手机下载最新版本并重新连接到 Car Thing 时，安装将继续进行。
       </div>
     </div>
   );

@@ -77,13 +77,12 @@ const PhoneCalls = () => {
         </div>
         <div className={styles.text}>
           <Type name="celloBook">
-            If turned on, you’ll see your incoming and outgoing phone call info
-            on your screen and will be able to answer or decline calls. Be sure
-            your phone is connected to the car's speakers and microphone.
+            如果打开，您将在屏幕上看到您的来电和呼出信息，并能够接听或拒绝来
+            电。确保您的手机已连接到汽车的扬声器和麦克风。
             <br />
             <br />
-            If your phone can’t be connected to the car’s microphone, place your
-            phone close enough to use the phone’s microphone.
+            如果您的手机无法连接到汽车的麦克风，请将手机放得足够近，以便使用手机
+            的麦克风。
           </Type>
         </div>
       </div>

@@ -14,7 +14,7 @@ export const titleBasedOnType = (
   const { contextUriType: contextType, contextUri } = playerStore;
 
   if (queueStore.isCurrentProviderQueue) {
-    return 'Queue';
+    return '队列';
   }
 
   if (queueStore.isPlayingSuggestedSong) {
@@ -45,15 +45,15 @@ export const titleBasedOnType = (
 
   if (contextType === URITypeMap.STATION) {
     if (!playerStore.contextTitle) {
-      return 'Radio';
+      return '专辑电台';
     }
-    return `Radio · ${playerStore.contextTitle}`;
+    return `专辑电台 · ${playerStore.contextTitle}`;
   }
 
   if (contextType === URITypeMap.COLLECTION) {
     return contextUri.includes('your-episodes')
-      ? 'Your Episodes'
-      : 'Liked Songs';
+      ? '你的单集'
+      : '已点赞的歌曲';
   }
 
   if (playerStore.contextTitle) {
@@ -64,5 +64,5 @@ export const titleBasedOnType = (
 };
 
 export const getShelfItemTitle = (title: string, uri?: string): string => {
-  return uri && isRadioStationURI(uri) ? `Radio · ${title}` : title;
+  return uri && isRadioStationURI(uri) ? `专辑电台 · ${title}` : title;
 };

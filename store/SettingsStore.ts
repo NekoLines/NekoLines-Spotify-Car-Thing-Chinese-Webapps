@@ -50,6 +50,7 @@ export enum AboutMenuItemId {
   IC_ID_MODEL_NAME = 'IC_ID_MODEL_NAME',
   HVIN = 'HVIN',
   LICENSE = 'LICENSE',
+  ZHNAME = 'ZHNAME'
 }
 
 export enum RestartMenuItemId {
@@ -144,7 +145,7 @@ class SettingsStore {
 
   airVentInterferenceView: View = {
     id: OptionsMenuItemId.AIR_VENT_INTERFERENCE,
-    label: 'Air vent interference',
+    label: '气流干扰检测',
     index: 0,
     disabledOffline: true,
     visible: () => true,
@@ -153,7 +154,7 @@ class SettingsStore {
 
   nightModeView: View = {
     id: OptionsMenuItemId.DISPLAY_AND_BRIGHTNESS,
-    label: 'Display and brightness',
+    label: '显示与亮度',
     index: 0,
     disabledOffline: true,
     visible: () => true,
@@ -162,7 +163,7 @@ class SettingsStore {
 
   phoneConnectionView: View = {
     id: MainMenuItemId.PHONE_CONNECTION,
-    label: 'Phone connection',
+    label: '连接到手机',
     index: 0,
     visible: () => true,
     type: 'parent',
@@ -170,7 +171,7 @@ class SettingsStore {
 
   phoneCallsView: View = {
     id: OptionsMenuItemId.PHONE_CALLS,
-    label: 'Phone calls',
+    label: '通话设置',
     index: 0,
     disabledOffline: false,
     visible: () => this.rootStore?.remoteConfigStore.handleIncomingPhoneCalls,
@@ -178,7 +179,7 @@ class SettingsStore {
     rows: [
       {
         id: OptionsMenuItemId.PHONE_CALLS_TOGGLE,
-        label: 'Phone calls onscreen',
+        label: '在屏幕上显示通话',
         type: 'toggle',
         visible: () => true,
         index: 0,
@@ -188,7 +189,7 @@ class SettingsStore {
 
   developerOptionsView: View = {
     id: MainMenuItemId.DEVELOPER_OPTIONS,
-    label: 'Developer options',
+    label: '开发者选项',
     index: 0,
     type: 'parent',
     visible: () => {
@@ -201,7 +202,7 @@ class SettingsStore {
 
   licenseView: View = {
     id: AboutMenuItemId.LICENSE,
-    label: 'Third party software',
+    label: '第三方软件协议',
     index: 0,
     type: 'parent',
     visible: () => true,
@@ -210,35 +211,35 @@ class SettingsStore {
   aboutInfoView: View[] = [
     {
       id: AboutMenuItemId.SERIAL,
-      label: 'Serial No.',
+      label: '序列号',
       index: 0,
       visible: () => true,
       type: 'key-value',
     },
     {
       id: AboutMenuItemId.APP_VERSION,
-      label: 'App Version',
+      label: '应用版本',
       index: 0,
       visible: () => true,
       type: 'key-value',
     },
     {
       id: AboutMenuItemId.OS_VERSION,
-      label: 'OS Version',
+      label: '系统版本',
       index: 0,
       visible: () => true,
       type: 'key-value',
     },
     {
       id: AboutMenuItemId.MODEL_NAME,
-      label: 'Model No.',
+      label: '产品型号',
       index: 0,
       visible: () => true,
       type: 'key-value',
     },
     {
       id: AboutMenuItemId.COUNTRY,
-      label: 'Country',
+      label: '国家/地区',
       index: 0,
       visible: () => true,
       type: 'key-value',
@@ -264,20 +265,27 @@ class SettingsStore {
       visible: () => true,
       type: 'key-value',
     },
+    {
+      id: AboutMenuItemId.ZHNAME,
+      label: '汉化人员',
+      index: 0,
+      visible: () => true,
+      type: 'key-value',
+    },
     this.licenseView,
   ];
 
   // Only use copies of this object
   settings: View = {
     id: MainMenuItemId.SETTINGS_ROOT,
-    label: 'Main menu',
+    label: '主菜单',
     index: 0,
     visible: () => true,
     type: 'parent',
     rows: [
       {
         id: MainMenuItemId.MIC,
-        label: 'Microphone',
+        label: '麦克风',
         index: 0,
         disabledOffline: true,
         visible: () => true,
@@ -286,13 +294,13 @@ class SettingsStore {
       this.phoneConnectionView,
       {
         id: MainMenuItemId.OPTIONS,
-        label: 'Options',
+        label: '设置',
         index: 0,
         rows: [
           this.nightModeView,
           {
             id: OptionsMenuItemId.TIPS_TOGGLE,
-            label: 'Onscreen tips',
+            label: '屏幕提示',
             index: 0,
             disabledOffline: true,
             visible: () => true,
@@ -306,7 +314,7 @@ class SettingsStore {
       },
       {
         id: MainMenuItemId.TIPS,
-        label: 'Tips',
+        label: '诀窍',
         disabledOffline: true,
         index: 0,
         visible: () => true,
@@ -314,7 +322,7 @@ class SettingsStore {
       },
       {
         id: MainMenuItemId.ABOUT,
-        label: 'About',
+        label: '关于',
         index: 0,
         rows: this.aboutInfoView,
         visible: () => true,
@@ -322,12 +330,12 @@ class SettingsStore {
       },
       {
         id: MainMenuItemId.RESTART,
-        label: 'Power and Reset',
+        label: '电源管理',
         index: 0,
         rows: [
           {
             id: RestartMenuItemId.RESTART_CONFIRM,
-            label: 'Restart',
+            label: '重启',
             index: 0,
             animationType: AnimationType.FADE_IN,
             visible: () => true,
@@ -335,7 +343,7 @@ class SettingsStore {
           },
           {
             id: RestartMenuItemId.POWER_OFF_TUTORIAL,
-            label: 'Power off/on',
+            label: '打开/关闭电源',
             index: 0,
             animationType: AnimationType.FADE_IN,
             visible: () => true,
@@ -343,7 +351,7 @@ class SettingsStore {
           },
           {
             id: RestartMenuItemId.FACTORY_RESET,
-            label: 'Factory reset',
+            label: '恢复出厂设置',
             index: 0,
             animationType: AnimationType.FADE_IN,
             visible: () => true,

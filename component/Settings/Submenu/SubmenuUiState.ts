@@ -14,13 +14,14 @@ type AboutValues = {
   serial: string;
   app_version: string;
   os_version: string;
-  country: 'Sweden';
+  country: '中国大陆';
   model_name: string;
   fcc_id: string;
   ic_id: string;
   ic_id_model_name: string;
   fcc_id_model_name: string;
   hvin: string;
+  zhname: string;
 };
 
 const createSubmenuUiState = (
@@ -51,10 +52,11 @@ const createSubmenuUiState = (
         return {
           ...values,
           os_version: values.os_version.replace('-release', ''),
-          country: 'Sweden',
+          country: '中国大陆',
           hvin: values.model_name,
           ic_id_model_name: `${values.ic_id}-${values.model_name}`,
           fcc_id_model_name: `${values.fcc_id}-${values.model_name}`,
+          zhname: '锦鲤，立音喵',
         };
       },
 

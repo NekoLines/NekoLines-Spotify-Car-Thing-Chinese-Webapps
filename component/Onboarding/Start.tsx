@@ -24,9 +24,9 @@ const Start = () => {
       onPointerDown={onboardingStore.handleStartClick}
       data-testid="onboarding-start"
     >
-      <div className={styles.title}>Car Thing is ready.</div>
+      <div className={styles.title}>Car Thing 准备好了。</div>
       <div className={styles.tourAction}>
-        <div className={styles.subtitle}>Take a tour</div>
+        <div className={styles.subtitle}>开始旅途</div>
         <div className={styles.arrowWrapper}>
           <IconArrowRight iconSize={16} />
         </div>

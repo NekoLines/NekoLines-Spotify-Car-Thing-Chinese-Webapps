@@ -16,7 +16,7 @@ const UnavailableSettingBanner = () => {
     });
   }, [uiState]);
 
-  const infoText = 'Some Settings are unavailable right now.';
+  const infoText = '抱歉，部分配置在当前情况下不可用。';
 
   const icon = <IconInfo32 />;
 

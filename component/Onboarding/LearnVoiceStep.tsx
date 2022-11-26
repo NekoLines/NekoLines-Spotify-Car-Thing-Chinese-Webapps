@@ -137,10 +137,10 @@ const LearnVoiceStep = ({
               (voiceStore.error ? (
                 <div className={styles.transition}>
                   <Type name="brioBold" className={styles.errorContent}>
-                    That didn’t work, you might be offline.
+                    这不起作用，你可能处于脱机状态。
                   </Type>
                   <Type name="brioBold" className={styles.errorContent}>
-                    That’s OK, let’s move on.
+                    没关系，让我们继续。
                   </Type>
                 </div>
               ) : (

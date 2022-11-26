@@ -29,7 +29,7 @@ const OnOrOff = ({
     )}
     data-testid={`${id}-toggle`}
   >
-    <Type name="canonBold">{isToggleOn ? 'On' : 'Off'}</Type>
+    <Type name="canonBold">{isToggleOn ? '开' : '关'}</Type>
   </div>
 );
 

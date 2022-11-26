@@ -18,7 +18,9 @@ const TracklistHeaderDetails = () => {
   } = useStore().tracklistStore.tracklistUiState;
 
   const trackListLength = tracksList.length;
-  const tracklistSuffix = trackListLength !== 1 ? 's' : '';
+  //const tracklistSuffix = trackListLength !== 1 ? 's' : '';
+  //原程序会在音乐不止一首的情况下在单词后添加s，中文没这个问题。
+  const tracklistSuffix = '';
   const showSubtitle = (isPlaylist || isPodcast) && trackListLength > 0;
   const showImage = isAlbum || isPodcast;
 
@@ -67,7 +69,7 @@ const TracklistHeaderDetails = () => {
             data-testid="tracklist-header-info-count"
           >
             <span>{`${totalInContext} ${
-              isPodcast ? 'episode' : 'song'
+              isPodcast ? '集节目' : '首歌曲'
             }${tracklistSuffix}`}</span>
           </div>
         )}

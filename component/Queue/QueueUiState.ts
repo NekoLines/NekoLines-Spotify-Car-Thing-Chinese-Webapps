@@ -91,15 +91,15 @@ class QueueUiState {
 
   get headerText(): string {
     if (this.selectedItemFromManualQueue || this.isEmptyQueue) {
-      return 'Next in Queue:';
+      return '队列中的下一个:';
     } else if (this.queueStore.current.provider === 'queue') {
       if (!this.playerStore.contextTitle) {
         // contextTitle is sometimes missing (eg on podcasts)
-        return 'Next Up:';
+        return '接下来:';
       }
-      return `Next From: ${this.playerStore.contextTitle}`;
+      return `下一个来自: ${this.playerStore.contextTitle}`;
     }
-    return `Next From: ${titleBasedOnType(this.playerStore, this.queueStore)}`;
+    return `下一个来自: ${titleBasedOnType(this.playerStore, this.queueStore)}`;
   }
 
   get leftItem(): QueueItem | undefined {

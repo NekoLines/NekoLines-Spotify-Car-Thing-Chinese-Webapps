@@ -16,14 +16,14 @@ const Updating = () => {
     <div className={styles.screen} data-testid={`${SetupView.UPDATING}-screen`}>
       <div className={styles.title}>
         <AppendEllipsis>
-          {otaStore.upgrading ? 'Finishing up' : 'Updating'}
+          {otaStore.upgrading ? '已完成' : '更新中'}
         </AppendEllipsis>
       </div>
       <div className={styles.content}>
         <div className={styles.subtitle}>
           {setupStore.isFinished
-            ? 'It should only take a couple of minutes'
-            : 'Continue with setup in the Spotify app.'}
+            ? '他应该需要一段时间来进行更新…'
+            : '在 Spotify 应用内继续配置该程序。'}
         </div>
         <div className={styles.progress}>
           {!otaStore.upgrading && `${otaStore.transferPercent || 0}%`}

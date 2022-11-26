@@ -22,7 +22,7 @@ const BackToSpotify = () => {
     >
       <SpotifyLogo condensed useBrandColor logoHeight={32} />
       <Type name="mestroBook" textColor="white" className={styles.label}>
-        Play Spotify
+        返回 Spotify
       </Type>
     </div>
   );

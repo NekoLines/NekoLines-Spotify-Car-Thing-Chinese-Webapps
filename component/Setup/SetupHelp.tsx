@@ -12,25 +12,26 @@ const SetUpHelp = ({ onBackToStart }: Props) => {
       <div className={styles.content}>
         <div className={styles.texts}>
           <div className={styles.subtitle}>
-            Here’s another way to start setup:
+            已安装程序可进行如下配置:
           </div>
           <div className={styles.subtitle}>
             <ul className={styles.subtitle}>
               <li>
-                Open the <span className={styles.white}>Spotify</span> app on
-                your phone
+                启动您手机上的 <span className={styles.white}>Spotify</span> 程序
               </li>
               <li>
-                Go to <span className={styles.white}>Home</span>
+                前往程序的 <span className={styles.white}>首页</span>
               </li>
               <li>
-                Open <span className={styles.white}>Settings </span>
+                点击位于右上角的 <span className={styles.white}>Settings </span>
                 <IconGears className={styles.white} />
-                <span> in the top right</span>
               </li>
               <li>
-                Go to <span className={styles.white}>Car</span>, then look for
+                在设置中的 <span className={styles.white}>Car</span> ，找到
                 <span className={styles.white}> Car Thing</span>
+              </li>
+              <li>
+                若设置中不存在 <span className={styles.white}>Car</span> ，请 <span className={styles.white}>更新</span> 您的程序。
               </li>
             </ul>
           </div>
@@ -40,7 +41,7 @@ const SetUpHelp = ({ onBackToStart }: Props) => {
           data-testid="go-to-start-setup"
           onClick={() => onBackToStart()}
         >
-          Back to Start setup
+          返回配置页面
         </div>
       </div>
     </div>

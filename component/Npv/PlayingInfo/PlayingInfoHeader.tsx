@@ -1,6 +1,7 @@
 import { useStore } from 'context/store';
 import { observer } from 'mobx-react-lite';
 import styles from './PlayingInfoHeader.module.scss';
+import { IconHires32, Type } from 'component/CarthingUIComponents';
 
 const PlayingInfoHeader = () => {
   const uiState = useStore().npvStore.playingInfoUiState;

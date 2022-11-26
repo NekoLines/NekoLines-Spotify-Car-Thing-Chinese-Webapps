@@ -8,14 +8,14 @@ import {
 
 const getTextBasedOnUri = (uri: string): string => {
   if (isPlaylistV1OrV2URI(uri)) {
-    return 'No songs have been added to this playlist';
+    return '没有歌曲添加到此歌单';
   } else if (isCollectionUri(uri)) {
     if (isYourEpisodesUri(uri)) {
-      return "Episodes you've collected live here.";
+      return "你收集的播客单集在这里。";
     } else if (isNewEpisodesUri(uri)) {
-      return 'Once you follow a show, episode reminders will appear here.';
+      return '一旦你关注了某个节目，这里就会出现新单集提醒。';
     }
-    return 'Songs you like will appear here.';
+    return '您喜欢的歌曲将出现在此处。';
   }
 
   return '';

@@ -25,19 +25,18 @@ const StartSetup = () => {
       className={styles.screen}
       data-testid={`${SetupView.START_SETUP}-screen`}
     >
-      <div className={styles.title}>Start setup</div>
+      <div className={styles.title}>初始配置</div>
       <div className={styles.content}>
         <div className={styles.texts}>
           <div className={styles.subtitle}>
-            Point your phone’s camera at this QR code and tap the link that
-            appears.
+            使用您手机的扫码功能<br />扫描右侧二维码来安装 <br /><span className={styles.white}>Spotify</span> 程序。
           </div>
           <div
             className={styles.needHelp}
             data-testid="go-to-help"
             onClick={() => setShowHelp(true)}
           >
-            Need some help?
+            已安装程序?
           </div>
         </div>
         <div className={styles.qrContainer}>

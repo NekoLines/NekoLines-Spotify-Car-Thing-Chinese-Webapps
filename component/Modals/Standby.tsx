@@ -47,7 +47,7 @@ const Standby = () => {
           }
           onClick={handlePowerClick}
         >
-          Power off
+          关闭电源
         </Button>
         <Button
           type={
@@ -57,7 +57,7 @@ const Standby = () => {
           }
           onClick={handleCancelClick}
         >
-          Cancel
+          取消
         </Button>
       </ButtonGroup>
     );

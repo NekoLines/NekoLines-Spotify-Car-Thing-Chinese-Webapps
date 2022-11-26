@@ -16,7 +16,7 @@ const NowPlaying = ({ playing = false, textName }: Props) => {
         textColor={greenLight}
         className={styles.nowPlayingText}
       >
-        Now Playing
+        当前播放
       </Type>
     </div>
   );

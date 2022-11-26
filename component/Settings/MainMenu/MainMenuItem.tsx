@@ -38,7 +38,7 @@ const DynamicMicContent = observer(() => {
         isMicMuted ? styles.white : styles.green,
       )}
     >
-      {isMicMuted ? 'Off' : 'On'}
+      {isMicMuted ? '关' : '开'}
     </div>
   );
 });

@@ -13,7 +13,7 @@ const Volume = () => {
       {uiState.carMode ? (
         <>
           <Type name="canonBook" textColor="white">
-            Phone volume unavailable with {uiState.carMode}
+            在 {uiState.carMode} 情况下手机音量不可用
           </Type>
         </>
       ) : (
@@ -28,7 +28,7 @@ const Volume = () => {
               {uiState.isVolumeAbove0 ? <IconVolume48 /> : <IconVolumeOff48 />}
             </div>
             <Type name="canonBook" textColor="white">
-              Phone volume
+              手机音量
             </Type>
           </div>
         </>

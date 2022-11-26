@@ -28,8 +28,8 @@ const animations = {
 
 export const learnVoiceData: Record<LearnVoiceStepId, LearnVoiceData> = {
   [LearnVoiceStepId.FIRST_UP]: {
-    header: 'First up:',
-    title: 'Using your voice',
+    header: '第一步:',
+    title: '使用您的声音',
     voiceEnabled: false,
     tts1: {
       fileName: 'onboarding_learn_voice_1_1.mp3',
@@ -37,7 +37,7 @@ export const learnVoiceData: Record<LearnVoiceStepId, LearnVoiceData> = {
     },
   },
   [LearnVoiceStepId.VOICE_PLAY_DRIVING_MUSIC]: {
-    header: 'Try saying...',
+    header: '尝试说...',
     title: 'Hey Spotify, play some driving music',
     voiceEnabled: true,
     tts1: {
@@ -50,7 +50,7 @@ export const learnVoiceData: Record<LearnVoiceStepId, LearnVoiceData> = {
     },
   },
   [LearnVoiceStepId.VOICE_NEXT_SONG]: {
-    header: 'Try saying...',
+    header: '尝试说...',
     title: 'Hey Spotify, next song',
     voiceEnabled: true,
     tts1: {
@@ -63,8 +63,8 @@ export const learnVoiceData: Record<LearnVoiceStepId, LearnVoiceData> = {
     },
   },
   [LearnVoiceStepId.LAST_STEP]: {
-    header: 'Last step:',
-    title: 'Navigating around Car Thing',
+    header: '最后一步:',
+    title: '可以导航到附近的目的地了！',
     voiceEnabled: false,
     tts1: {
       fileName: 'onboarding_learn_tactile_navigation.mp3',

@@ -20,12 +20,12 @@ const RestartConfirm = () => {
 
   return (
     <div className={styles.restartConfirm}>
-      <div className={styles.title}>Are you sure?</div>
+      <div className={styles.title}>确定?</div>
       <div className={styles.description}>
-        Tap the button to restart Car Thing.
+        若您确定重启，请点击按钮。
       </div>
       <Button type={ButtonType.BUTTON_PRIMARY} onClick={reboot}>
-        Restart Car Thing
+        重启 Car Thing
       </Button>
     </div>
   );

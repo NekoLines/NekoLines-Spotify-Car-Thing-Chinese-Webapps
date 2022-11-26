@@ -31,7 +31,7 @@ const PresetUnavailable = ({ preset }: Props) => {
         >
           {fromUriToPresetCategoryType(preset.context_uri)}
         </Type>
-        <Type name="mestroBold">unavailable</Type>
+        <Type name="mestroBold">不可用</Type>
       </div>
     </>
   );

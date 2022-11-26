@@ -10,19 +10,18 @@ const OtaUpdating = () => {
     <div className={styles.background}>
       {otaStore.error ? (
         <>
-          <div className={styles.error}>Update failed</div>
+          <div className={styles.error}>更新失败</div>
           <div className={styles.subtitle}>
-            To restart the device and try again, please unplug the power cable,
-            then plug it back in.
+            若要重启设备并重试，请拔下设备电源，稍等一段时间后插入即可。
           </div>
         </>
       ) : (
         <>
           <div className={styles.title} data-testid="critical-ota-screen">
-            <AppendEllipsis>Updating</AppendEllipsis>
+            <AppendEllipsis>升级中</AppendEllipsis>
           </div>
           <div className={styles.subtitle}>
-            Please keep Car Thing plugged in and powered on.
+            请保证设备电源供应稳定，不要断开电源。
           </div>
           {otaStore.transferring && (
             <div

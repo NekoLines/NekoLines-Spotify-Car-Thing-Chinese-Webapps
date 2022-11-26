@@ -17,10 +17,9 @@ const Failed = () => {
         }
       }}
     >
-      <div className={styles.title}>Try again</div>
+      <div className={styles.title}>请再试一次</div>
       <div className={styles.subtitle}>
-        Car Thing couldn’t finish the update. Make sure your phone has cellular
-        reception. Tap the screen anywhere to try again.
+        Car Thing 无法完成更新，请确保您的手机具备网络链接后点击屏幕任意位置进行重试。
       </div>
     </div>
   );
