@@ -32,7 +32,7 @@ const PresetContent = ({ preset }: Props) => {
           dataTestId={`preset-${preset.slot_index}-name`}
         >
           {isRadioStationURI(preset.context_uri)
-            ? `Radio · ${preset.name}`
+            ? `专辑电台 · ${preset.name}`
             : preset.name}
         </Type>
         {uiState.showNowPlaying(preset.context_uri) ? (
