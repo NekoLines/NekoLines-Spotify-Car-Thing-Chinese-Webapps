@@ -24,6 +24,7 @@
 请参考原项目的使用方法，您需要让您的设备运行最新的固件并启用ADB，最简单的方法请参考 [这里](https://github.com/err4o4/spotify-car-thing-reverse-engineering/issues/22#issue-1432896381) ，旧的固件不兼容本项目。
 
 您需要安装 ADB 、 Node.js 和 Yarn ，然后克隆项目进行修改。最简单的方法是下载 Releases 并执行 `./push.sh`
+
 更详细的一些使用指南请参考 [我的博客](https://0w0.in/2022/11/wdsctwjgl/) 。
 
 *本程序源码没有包含编译好的文件，如果您需要执行 `./push.sh` 请下载 Releases 或提前编译（参考**编译源码**）。*
