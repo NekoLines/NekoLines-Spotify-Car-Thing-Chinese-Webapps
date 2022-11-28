@@ -66,7 +66,7 @@ const ShelfHeader = () => {
 
   const getChineseTitle = (id,title) => {
     switch(id){
-      case VOICE_IDENTIFIER:return '搜索'; 
+      case VOICE_IDENTIFIER:return '语音'; 
       case HOME_IDENTIFIER:return '主页'; 
       case 'playlists':return '歌单';
       case 'podcasts':return '播客和节目';

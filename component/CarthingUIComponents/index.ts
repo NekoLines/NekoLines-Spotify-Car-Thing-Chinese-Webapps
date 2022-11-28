@@ -49,7 +49,6 @@ export { default as IconMute32 } from "./Icons/IconMute32";
 export { default as IconWind32 } from "./Icons/IconWind32";
 export { default as IconHomeActive32 } from "./Icons/IconHomeActive32";
 export { default as IconHome32 } from "./Icons/IconHome32";
-export { default as IconHires32 } from "./Icons/IconHires32";
 export { default as IconSearch32 } from "./Icons/IconSearch32";
 export { default as IconSearchActive } from "./Icons/IconSearchActive";
 export { default as IconLibrary32 } from "./Icons/IconLibrary32";

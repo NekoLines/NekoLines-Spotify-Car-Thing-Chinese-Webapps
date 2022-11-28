@@ -22,7 +22,7 @@ const RestartConfirm = () => {
     <div className={styles.restartConfirm}>
       <div className={styles.title}>重启</div>
       <div className={styles.description}>
-        您确定要重启设备吗？设备在启动前将不可用。
+        您确定要重启设备吗？
       </div>
       <Button type={ButtonType.BUTTON_PRIMARY} onClick={reboot}>
         重启 Car Thing

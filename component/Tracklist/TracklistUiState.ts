@@ -114,7 +114,7 @@ class TracklistUiState {
 
       this.rootStore.errorHandler.logUnexpectedError(
         new Error(
-          '应滚动到最新播放的播客单集，但它不在列表中',
+          '应滚动到最新播放的播客或节目单集，但该项目不在列表中',
         ),
       );
     }
