@@ -34,7 +34,7 @@ const DisplayAndBrightness = () => {
           {...pointerListenersMaker(setPressed)}
           onClick={() => uiState.handleClickToggle()}
         >
-          <Type name="canonBold">夜行模式</Type>
+          <Type name="canonBold">夜航模式</Type>
           <Type
             name="canonBold"
             textColor={uiState.isNightMode && greenLight}
@@ -44,7 +44,7 @@ const DisplayAndBrightness = () => {
           </Type>
         </div>
         <Type name="celloBook" className={styles.text}>
-          当夜行模式启动后，屏幕将对低光条件下的显示效果进行优化，您会获得更好的夜间使用效果。
+          当夜航模式启动后，屏幕将对低光条件下的显示效果进行优化，您会获得更好的夜间使用效果。
         </Type>
       </div>
     </>

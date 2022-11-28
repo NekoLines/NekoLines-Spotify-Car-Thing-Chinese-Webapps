@@ -254,7 +254,7 @@ class ShelfStore {
       this.loading = false;
       this.rootStore.errorHandler.logUnexpectedError(
         e,
-        '未能加载机框数据',
+        '读取框架数据失败',
       );
     }
   }
