@@ -14,12 +14,22 @@ const ScrubbingBar = () => {
       }}
       data-testid="scrubbing-bar"
     >
+      
+     
       <div
         className={styles.progressPlayed}
         style={{
-          transform: `scaleX(${uiState.trackPlayedPercent * 8})`,
+          transform: `scaleX(${uiState.trackPlayedPercent * 8})`
         }}
       />
+      <div 
+      style={{
+        marginLeft: `${uiState.trackPlayedPercent * 8}px`,
+        marginTop: `-14px`        
+      }}
+        >
+        <img src="images/progress-icon.svg" alt="" height="24px" width="24px" />
+      </div>
     </div>
   );
 };
