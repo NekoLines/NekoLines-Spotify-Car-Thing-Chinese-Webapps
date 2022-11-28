@@ -13,7 +13,5 @@ $artwork-container-height: 248px;
   width: $artwork-container-width;
   height: $artwork-container-height;
   box-shadow: 0 16px 32px rgb(0 0 0 / 20%);
-  &.episode {
-    border-radius: 16px;
-  }
+  border-radius: 16px;
 }

@@ -38,6 +38,9 @@
   &.shaded {
     filter: brightness(30%);
   }
+  &.track {
+    border-radius: 16px;
+  }
 }
 
 .radioStation {

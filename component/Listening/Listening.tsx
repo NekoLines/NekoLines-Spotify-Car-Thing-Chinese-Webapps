@@ -85,9 +85,9 @@ export function Listening({
           // TODO: It's not clear in which case this can happen,
           //  VoiceStore should provide a default
           <>
-            <div>Sorry!</div>
-            <div>Something went wrong.</div>
-            <div>Tap to try again.</div>
+            <div>抱歉！</div>
+            <div>出现了未知的错误</div>
+            <div>点击以重试。</div>
           </>
         )}
       </Type>

@@ -43,11 +43,11 @@ class RootErrorBoundary extends Component<
   render() {
     return this.state.hasError ? (
       <div className={styles.dialog}>
-        <div className={styles.title}>Something went wrong</div>
+        <div className={styles.title}>出现了未知的错误</div>
         <div className={styles.description}>
           <p>
-            Restarting in {this.state.counter > 0 ? this.state.counter : 0}{' '}
-            seconds
+            系统将在 {this.state.counter > 0 ? this.state.counter : 0}{' '}
+            秒后重启
           </p>
         </div>
       </div>
